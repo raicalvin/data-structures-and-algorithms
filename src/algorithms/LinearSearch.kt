@@ -1,3 +1,5 @@
+package algorithms
+
 // Searches the given list for the item and returns an index of its found position or null otherwise
 fun linearSearch(list: List<Int>, item: Int): Int? {
     var foundIndex: Int? = null

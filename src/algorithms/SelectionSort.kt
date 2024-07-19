@@ -1,3 +1,5 @@
+package algorithms
+
 fun selectionSort(list: List<Int>): List<Int> {
     val originalList = list.toMutableList()
     val sorted = mutableListOf<Int>()

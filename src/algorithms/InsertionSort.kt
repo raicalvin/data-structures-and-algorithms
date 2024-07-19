@@ -1,3 +1,5 @@
+package algorithms
+
 // Sorts a list of numbers and returns them in ascending order
 fun insertionSort(list: List<Int>): List<Int> {
     val listToSort = list.toMutableList()

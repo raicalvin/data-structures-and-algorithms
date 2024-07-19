@@ -1,3 +1,5 @@
+package algorithms
+
 fun binarySearch(list: List<Int>, item: Int): Int? {
     var lowIndex = 0
     var highIndex = list.size - 1
