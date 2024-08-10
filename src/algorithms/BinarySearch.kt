@@ -17,3 +17,16 @@ fun binarySearch(list: List<Int>, item: Int): Int? {
 
     return null
 }
+
+fun binarySearchDivideAndConquer(list: List<Int>, target: Int, leftIndex: Int, rightIndex: Int): Int? {
+    if (leftIndex > rightIndex) return null
+
+    val midIndex = (leftIndex + rightIndex) / 2
+    val element = list[midIndex]
+
+    return when {
+        element == target -> midIndex
+        element > target -> binarySearchDivideAndConquer(list, target, leftIndex, midIndex - 1)
+        else -> binarySearchDivideAndConquer(list, target, midIndex + 1, rightIndex)
+    }
+}
