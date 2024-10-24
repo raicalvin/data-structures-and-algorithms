@@ -1,5 +1,6 @@
-import algorithms.dijkstrasAlgorithm
+import problems.radioStationProblem
 
 fun main() {
-    dijkstrasAlgorithm()
+    println("Printing...")
+    radioStationProblem()
 }
